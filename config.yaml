@@ -1,0 +1,20 @@
+name: "bluebell"
+mode: "dev"
+port: 8081
+version: "v0.1"
+machine_id: 1
+start_time: "2023-05-09"
+log:
+  level: "debug"
+  filename: "web-app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+mysql:
+  hosts: "192.168.1.195"
+  ports: 3306
+  user: "root"
+  password: "admin123"
+  dbname: "future"
+  max_open_conns: 200
+  max_idle_conns: 20
